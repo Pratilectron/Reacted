@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+
+	<head>	
+		<meta charset="UTF-8">
+		<title>Reaction Time & Aim Trainer</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<link href="icon.png" rel="icon" type="image/ico">		
+	</head>
+	
+	<body>
+		
+		<div class="info" style="display:inline-block; width:100%;">
+			
+			<div align="center" style="float:left;padding-left:28%">			
+				<h1>Test your reaction time & Improve your aim</h1>
+				<p>Click on the target circle as fast as you can!</p>
+				<p id="time">Time elapsed:</p>
+			</div>
+			
+			<div align="right" style="float:right;padding-top:2%; margin:0px">
+				<table>
+					<tr>
+						<td align="right">Size :</td> 
+						<td><input type="range" min="0" max="3" step="1" value="3" class="slider" id="SizeRange" onchange="Sized()"></td>
+					</tr>
+					<tr>
+						<td align="right">Speed :</td>
+						<td><input type="range" min="0" max="2" step="1" value="0" class="slider" id="SpeedRange" onchange="Speeded()"></td>
+					</tr>
+				</table>
+			</div>
+			
+		</div>
+		
+		<div id="shape"></div>
+		<script src="js/script.js"></script>
+		
+	</body>
+</html>
